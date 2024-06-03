@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Chatbot de Service à la Clientèle</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<div class="chat-container">
+		<div class="chat-header">
+			<h2>Chatbot de Service à la Clientèle</h2>
+		</div>
+		<div class="chat-window" id="chat-window">
+			<div class="message bot-message">Bonjour! Comment puis-je vous aider aujourd'hui?</div>
+		</div>
+		<div class="chat-input">
+			<input type="text" id="user-input" placeholder="Écrivez votre message ici..." onkeypress="handleKeyPress(event)">
+			<button onclick="sendMessage()">Envoyer</button>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+
+</html>
